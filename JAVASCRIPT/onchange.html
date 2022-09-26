@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>BELAJAR ONCHANGE-JAVASCRIPT</title>
+</head>
+
+<body>
+    <h1>Program Tarif Bus</h1>
+    <hr>
+    Tujuan
+    <br>
+    <select name="tujuan" id="tujuan">
+        <option value="">silahkan pilih tujuan anda</option>
+        <option value="pekanbaru">Pekanbaru</option>
+        <option value="medan">Medan</option>
+        <option value="padang">Padang</option>
+    </select>
+    <br><br>
+    harga Tiket
+    <br>
+    <input type="text" name="harga" id="harga" style="background-color: red; border:1px solid #2d2d2d; padding:5px;"
+        readonly>
+
+    <script>
+        var tj = document.getElementById('tujuan');
+        var hg = document.getElementById('harga');
+
+        tj.addEventListener('change', function () {
+            if (tj.value == 'pekanbaru') {
+                hg.value = '70000';
+            }
+            else if (tj.value == 'medan') {
+                hg.value = '200000';
+            } else {
+                hg.value = '150000';
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+    <title>Tugas Percabangan</title>
+    <!-- Css Link!!! -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <style>
+        button {
+            background-color: aqua;
+            border: 0px;
+            border-radius: 5px;
+            padding: 15 30;
+            box-shadow: 2px 2px rgba(46, 42, 42, 0.607);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>Program Mencari Grade Nilai </h1>
+    Input Nilai Anda
+    <input type="text" id="isi">
+    <button onclick="tombol()">Check</button>
+    <br><br>
+    <div>Grade Nilai Anda Adalah <span id="grade"></span></div>
+
+    <!-- Bagian Rumus -->
+    <script>
+        function tombol() {
+            var i = document.getElementById("isi").value;
+            var a = document.getElementById("grade");
+            var h = document.getElementById("higher");
+
+            if (i >= 90) {
+                a.innerHTML = "A";
+            }
+            else if (i >= 80) {
+                a.innerHTML = "B"
+            }
+            else if (i >= 75) {
+                a.innerHTML = "C"
+            }
+            else {
+                a.innerHTML = "D"
+            }
+
+
+        }
+
+
+
+        if (condition) {
+
+        }
+
+
+    </script>
+
+</body>
+<script src="Assets/js/bootstrap.bundle.min.js"></script>
+
+</html>

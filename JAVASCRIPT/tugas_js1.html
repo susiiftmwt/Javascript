@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>tugas1</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            width: 600px;
+            height: 350px;
+            margin: auto;
+            background-color: white;
+            margin-top: 40px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body style="background-color:#2d2d2d ;">
+    <div class="container p-3">
+        <div class="container2">
+            <div class="row">
+                <div class="col  text-info text-center mt-2">PROGRAM PENJUALANAN KOMPUTER</div>
+                <hr>
+                <div class="col fs-6 text-secondary">Silahkan pilih jenis barang yang akan dibeli,dan anda akan
+                    mengetahui berapa harganya.
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">Barang</div>
+                <select name="barang" id="barang" class="form-control">
+                    <option value="">-pilih barang-</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="keyboard">Keyboard</option>
+                    <option value="mouse">Mouse</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col">Discount</div>
+                <input type="text" name="discount" id="discount" value="10%" readonly>
+            </div>
+            <div class="row">
+                <div class="col">Harga Jual</div>
+                <input type="text" name="harga" id="harga"
+                    style="background-color: red; border:1px solid #2d2d2d; padding:5px;" readonly>
+
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var bg = document.getElementById('barang');
+        var hg = document.getElementById('harga');
+        var persent = 0.1;
+        bg.addEventListener('change', function () {
+            if (bg.value == 'laptop') {
+                var harga = 7500000;
+                var p = harga * persent;
+                var k = harga - p;
+                // console.log(k);
+                hg.value = k;
+            }
+            else if (bg.value == 'keyboard') {
+                var harga = 100000;
+                var p = harga * persent;
+                var k = harga - p;
+                hg.value = k;
+            } else {
+                var harga = 75000;
+                var p = harga * persent;
+                var k = harga - p;
+                hg.value = k;
+            }
+        })
+    </script>
+</body>
+
+</html>

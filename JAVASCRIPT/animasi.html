@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>ANIMASI WARNA</title>
+</head>
+
+<body>
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur magnam, sint nulla nihil
+        dignissimos consequuntur officia itaque nam beatae ducimus soluta laborum id suscipit facilis! Voluptas illum
+        quas ipsum accusantium?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem quisquam aperiam provident
+        doloribus molestiae, ea, esse at ex, cupiditate ab architecto. In eligendi optio reiciendis dolorem consectetur.
+        Eos, repellat!</p>
+    <p class="paragraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis, fuga libero tempora
+        excepturi perspiciatis eum vero porro repellendus totam doloribus repudiandae numquam a expedita provident,
+        mollitia corrupti ea hic!</p>
+    <script>
+        var pg = document.getElementsByClassName("paragraf");
+        setInterval(function () {
+            pg[0].style.color = "red";
+            pg[1].style.color = "green";
+            pg[2].style.color = "blue";
+            setTimeout(function () {
+                pg[0].style.color = "pink";
+                pg[1].style.color = "yellow";
+                pg[2].style.color = "purple";
+            }, 500);
+        }, 1000);
+    </script>
+</body>
+
+</html>

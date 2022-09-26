@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>BELAJAR <EVENT-JAVASCRIPT></EVENT-JAVASCRIPT>
+    </title>
+</head>
+
+<body>
+    <button onclick="hello()">hello</button>
+    <button id="w">world</button>
+
+    <script>
+        function hello() {
+            alert("hello world!");
+        }
+        var tombolw = document.getElementById('w');
+        tombolw.addEventListener('onclick', function () {
+            alert("hello world!");
+        })
+    </script>
+</body>
+
+</html>

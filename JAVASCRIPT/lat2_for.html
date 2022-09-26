@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>lat for</title>
+</head>
+
+<body>
+    <input type="text" id="isi">
+    <button onclick="tombol()">lihat</button>
+    <script>
+        function tombol() {
+            var isi = document.getElementById("isi").value;
+            for (var i = 1; i <= isi; i++) {
+                for (var j = 1; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
